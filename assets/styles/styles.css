@@ -1,0 +1,362 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    --c-primary-color: #F2CB07;
+    --c-primary-color-hover: rgba(242, 203, 7, 0.30);
+    --c-navbar-link-color: #ddd;
+    /* --c-primary-color-desat: rgba(242, 203, 7, 0.70); */
+    /* --c-secondary-color: #86C628; */
+    /* --c-tertiary-color: #fac375; */
+    /* --c-hover-color-gray: rgba(0, 0, 0, 0.10); */
+}
+
+
+
+/* NAVBAR STYLES */
+
+.navbar {
+    --bs-navbar-toggler-focus-width: none;
+    --bs-navbar-toggler-border-color: none;
+    --bs-navbar-toggler-border-radius: 50%;
+    --bs-navbar-hover-color: var(--c-primary-color);
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgb(221,221,221)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/> </svg>");
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.30);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* --bs-navbar-color: var(--c-secondary-color); */
+    /* background-color: var(--c-primary-color) !important; */
+}
+
+.navbar a {
+    color: var(--c-navbar-link-color);
+}
+
+#navContainer {
+    transition: all 0.3s;
+}
+
+.navbar-toggler {
+    padding: 0.5rem;
+    transition: background-color 0.2s;
+}
+.navbar-toggler:hover {
+    background-color: var(--c-primary-color-hover);
+}
+
+
+
+/* BRAND LOGO STYLES */
+
+.c-brand {
+    height: 4rem;
+}
+
+
+
+/* HERO SECTION STLYES */
+
+.c-header {
+    height: 100dvh;
+}
+
+/* MEDIA QUERY HERO SECTION LARGE DEVICE */
+@media screen and (width <= 992px) {
+    .c-header {
+        height: 80dvh;
+    }
+}
+
+.c-hero {
+    height: 100%;
+    background-image: url("../img/header/img__header__hero.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.c-hero__overlay {
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.40);
+}
+
+
+/* HERO SECTION OVERLAY MEDIA QUERY LG DEVICE */
+
+@media screen and (width <= 992px) {
+    .c-hero__overlay {
+        height: 80dvh;
+    }
+}
+
+
+.c-h1__span {
+    background-image: linear-gradient(to bottom, #0597F2 20%, #F2CB07 60%);
+    color: transparent;
+    background-clip: text;
+    filter: brightness(1.1);
+}
+
+.c-h1__span:nth-of-type(1){
+    font-family: 'reenie beanie', 'montserrat', sans-serif;
+    font-size: 7rem;
+    text-transform: uppercase;
+    line-height: 1;
+    transition: font-size 0.3s;
+}
+
+.c-h1__span:nth-of-type(2) {
+    font-weight: 400;
+}
+
+header .btn-light:hover {
+    border-color: var(--c-primary-color);
+    background-color: var(--c-primary-color);
+}
+
+
+/* HERO SECTION H1 MEDIA QUERY LG DEVICE */
+
+@media screen and (width <= 992px) {
+    .c-h1__span:nth-of-type(1){
+        font-size: 5.5rem;
+    }
+    .c-hero div:nth-of-type(2) {
+        padding-top: 7rem;
+    }
+}
+
+
+
+/* WHATSAPP BUTTON STYLES */
+
+.c-whatsapp__img {
+    width: 5rem;
+    filter: drop-shadow(3px 10px 5px rgba(0, 0, 0, 0.30)) brightness(1);
+    transition: width 0.5s, filter 0.3s;
+}
+.c-whatsapp__img:hover {
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.30)) brightness(0.8);
+}
+
+
+
+/* OVERVIEW SECTION STYLES */
+
+.c-overview {
+    height: 11.25rem;
+    background-color: #d3dae1;
+}
+
+        /* MEDIA QUERY OVERVIEW SECTION LARGE DEVICE */
+@media screen and (width <= 992px) {
+    .c-overview {
+        height: 7rem;
+    }
+    .c-overview__text {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* CORTES Y COLORIMETRIA SECTION CAROUSEL STYLES */
+
+.carousel-inner {
+    background-image: linear-gradient(to right, #3335, transparent, #3335);
+}
+
+.c-carousel__item {
+    height: 47.5rem;
+}
+
+.c-carousel__item__img {
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+/* MEDIA QUERY CAROUSEL CORTES XL DEVICE */
+@media screen and (width <= 1400px) {
+    .c-carousel__item {
+        height: 46.5rem;
+    }
+}
+/* MEDIA QUERY CAROUSEL CORTES LG DEVICE */
+@media screen and (width <= 1200px) {
+    .c-carousel__item {
+        height: 40rem;
+    }
+}
+/* MEDIA QUERY CAROUSEL CORTES MD DEVICE */
+@media screen and (width <= 992px) {
+    .c-carousel__item {
+        height: 30rem;
+    }
+}
+/* MEDIA QUERY CAROUSEL CORTES SM DEVICE */
+@media screen and (width <= 768px) {
+    .c-carousel__item {
+        height: 21.5rem;
+    }
+}
+/* MEDIA QUERY CAROUSEL CORTES XS DEVICE */
+@media screen and (width <= 576px) {
+    .c-carousel__item {
+        height: 17.5rem;
+    }
+}
+
+
+
+
+
+/* COLORIMETRIA SECTION COUPON STYLES */
+.c-coupon {
+    width: 15rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #0597F2 20%, #F2CB07 60%);
+    border-left: 4px dashed #0597F2;
+    z-index: 10;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s;
+}
+
+#carouselColor:hover .c-coupon {
+    right: -3rem;
+}
+
+.c-coupon h3 {
+    font-size: 1rem;
+    text-shadow: 0px 1px 1px #ddd;
+}
+
+/* MEDIA QUERY COUPON SECTION MEDIUM DEVICE */
+@media screen and (width <= 768px) {
+    .c-coupon {
+        width: 8rem;
+    }
+    .c-coupon h3 {
+        font-size: 0.7rem;
+    }
+}
+
+/* MEDIA QUERY COUPON SECTION SMALL DEVICE */
+@media screen and (width <= 576px) {
+    .c-coupon h3 {
+        font-size: 0.6rem;
+    }
+    #carouselColor:hover .c-coupon {
+        right: 0rem;
+    }    
+}
+
+
+
+/* 'MAQUILLAJE' SECTION STYLES */
+
+
+.c-maquillaje {
+    height: 48rem;
+}
+
+.c-maquillaje__img__1 {
+    object-fit: cover;
+    object-position: 0% 20%;
+}
+
+.c-maquillaje__img__2 {
+    object-fit: cover;
+    object-position: 0% 30%;
+}
+
+.c-maquillaje__img__3 {
+    object-fit: cover;
+    object-position: 60% 0%;
+}
+
+.c-maquillaje__img__4 {
+    object-fit: cover;
+    object-position: 0% 50%;
+}
+
+
+@media screen and (width <= 576px) {
+    .c-maquillaje__img__1, .c-maquillaje__img__2, .c-maquillaje__img__4 {
+        object-position: center;
+    }
+    .c-maquillaje__img__3 {
+        object-position: 54% 0%;
+    }
+}
+
+
+
+
+
+
+
+/* TESTIMONIALS SECTION STYLES */
+
+.c-profile {
+    background-color: #ededed;
+}
+
+.c-profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -4rem;
+    border: 10px solid white;
+}
+
+.c-profile p {
+    font-size: 1.5rem;
+}
+
+.c-profile p::before {
+    content: open-quote;
+    font-size: 4rem;
+    line-height: 1;
+    position: relative;
+    top: 1.5rem;
+    left: -0.5rem;
+    color: var(--c-primary-color);
+}
+
+.c-profile p::after {
+    content: close-quote;
+    font-size: 4rem;
+    line-height: 0;
+    position: relative;
+    top: 1.5rem;
+    left: 0.5rem;
+    color: var(--c-primary-color);
+}
+
+
+
+
+
+
+/* FOOTER STYLES */
+
+footer a {
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: var(--c-primary-color) !important;
+    
+}
+
+
+/* MEDIA QUERIES RESPONSIVE */
+
+/* MEDIA QUERY MEDIUM DEVICE  */
+@media screen and (width <= 768px) {
+    .c-whatsapp__img {
+        width: 4rem;
+    }
+}
+
